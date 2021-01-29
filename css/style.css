@@ -1,0 +1,280 @@
+/*
+    Author: Joel Sebastian;
+    Theme: Jacob's Cafe;
+    Version : 1;
+*/
+* {
+  margin: 0 0;
+  padding: 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.master{
+    background-image: url(../images/background.jpg);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.highlight {
+  border: 1px solid crimson;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.textright {
+  text-align: right;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+.btn {
+  padding: 1%;
+  border: none;
+  font-size: 1rem;
+  color: rgb(1, 23, 56);
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: rgba(7, 167, 167, 0.986);
+  font-style: italic;
+  color: rgb(1, 23, 56);
+  outline:none;
+}
+
+.btn:hover {
+  color: firebrick;
+  background-color: rgb(238, 173, 9);
+  outline: none;
+}
+
+
+
+.text-center {
+  text-align: center;
+}
+
+.image-size {
+  max-width: 100%;
+}
+/*Navigation Bar*/
+.navbar{
+    background-color:blanchedalmond;
+}
+.logoimg {
+  width: 100%;
+}
+
+.logo {
+  width: 10%;
+  float: left;
+}
+
+.menu ul {
+  margin-right: 20%;
+  list-style-type: none;
+  padding: 5% 0 5% 0;
+}
+
+.menu ul li {
+  display: inline;
+  padding: 3%;
+  font-weight: bold;
+}
+
+.menu ul li:hover {
+  background-color: rgb(238, 173, 9);
+
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: rgb(1, 23, 56);
+}
+
+.menu ul li a:hover {
+  color: firebrick;
+}
+
+.online {
+  border: none;
+  margin-top: 4%;
+  vertical-align: top;
+  float: right;
+  padding: 2%;
+  font-weight: bolder;
+  background-color: rgba(218, 9, 9, 0.986);
+  font-size: 20px;
+  font-style: italic;
+  color: rgb(1, 23, 56);
+  border-radius: 5px;
+}
+
+.online:hover {
+  color: firebrick;
+  background-color: rgb(238, 173, 9);  
+}
+
+/* Food Search */
+.food-search {
+  background-image: url(../images/search-pic.jpg); 
+  background-size:contain;
+  background-position:right;
+  background-color: rgba(99, 26, 26, 0.438);
+  background-repeat:no-repeat;
+  padding: 17% 0;
+}
+
+.food-search input[type="search"] {
+  width: 40%;
+  padding: 1%;
+  font-size: 1rem;
+  background-color: inherit;
+  color:antiquewhite;  
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(196, 196, 196);
+  border-radius: 3px;
+  outline: none;
+}
+
+.food-search input[type="search"]::placeholder{
+    color:rgb(201, 201, 201);
+    text-shadow: 2px 0px grey;
+}
+
+/* Categories */
+.categories h2 {
+  padding: 2%;
+  font-style: oblique;
+  font-weight: 800;
+  color: rgb(1, 23, 56);
+}
+
+.box {
+  margin: 1.5%;
+  width: 30%;
+  float: left;
+}
+
+.image-size-snacks {
+  height: 220px;
+  max-width: 100%;
+}
+
+.float-container {
+  position: relative;
+}
+
+.float-text-drinks {
+  position: absolute;
+  bottom: 10px;
+  right: 120px;
+  color: rgb(238, 173, 9);
+  font-size: medium;
+  font-weight: bold;
+  text-shadow:1px 1px black;
+  /* background-color: rgb(48, 36, 36); */
+  border-radius: 5px;
+  padding: 1%;
+}
+
+.float-text-snacks {
+  position: absolute;
+  bottom: 10px;
+  right: 188px;
+  color: rgb(238, 173, 9);
+  font-size: medium;
+  font-weight: bold;
+  text-shadow:1px 1px black;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+.float-text-meals {
+  position: absolute;
+  bottom: 10px;
+  right: 213px;
+  color: rgb(238, 173, 9);
+  font-size: medium;
+  font-weight: bold;
+  text-shadow:1px 2px black;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+/* Food Menu */
+.food-menu{
+    background-color:rgba(196, 132, 37, 0.575);
+}
+.food-menu h2 {
+    padding: 2%;
+    font-style: oblique;
+    font-weight: 800;
+    color: rgb(1, 23, 56);
+  }
+
+.food{
+    float:left;
+    position: relative;
+    width: 30%;
+    margin: 1%;
+    left: 50%;
+}
+
+.foodmenu-text1{
+    font-style: oblique;
+    position: absolute;
+    right: 130%;
+    width:100%;
+    font-weight: 550;
+}
+
+.foodmenu-text2{
+    font-style: italic;
+    font-weight: lighter;
+    position: absolute;
+    right: 130%;
+    width:100%;
+    top:30px;
+}
+
+/* Social */
+.social{
+    background-color:burlywood;
+      
+    
+}
+.social ul li {
+    position: relative;
+    width:30%;
+    display: inline;
+    margin: 1%;
+    padding: 1%;
+    left: 35%;
+}
+
+.social ul li a img{
+    position: relative;
+    width: 5%;
+}
+
+/* Footer */
+.footer{
+  /* background-color: rgba(146, 26, 26, 0.788); */
+  background-color: rgba(146, 26, 26, 0.788);
+}
+
+.footer p a{
+  color: goldenrod;
+}
+
+.footer p a:hover{
+  color:burlywood
+}
