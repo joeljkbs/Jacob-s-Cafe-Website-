@@ -34,24 +34,7 @@
   float: none;
 }
 
-.btn {
-  padding: 1%;
-  border: none;
-  font-size: 1rem;
-  color: rgb(1, 23, 56);
-  font-weight: 600;
-  border-radius: 5px;
-  background-color: rgba(7, 167, 167, 0.986);
-  font-style: italic;
-  color: rgb(1, 23, 56);
-  outline:none;
-}
 
-.btn:hover {
-  color: firebrick;
-  background-color: rgb(238, 173, 9);
-  outline: none;
-}
 
 
 
@@ -146,8 +129,28 @@
 
 .food-search input[type="search"]::placeholder{
     color:rgb(201, 201, 201);
-    text-shadow: 2px 0px grey;
+    -webkit-text-stroke:0.5px wheat;
+  }
+
+.btn {
+  padding: 1%;
+  border: none;
+  font-size: 1rem;
+  color: rgb(1, 23, 56);
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: rgba(7, 167, 167, 0.986);
+  font-style: italic;
+  color: rgb(1, 23, 56);
+  outline:none;
 }
+
+.btn:hover {
+  color: firebrick;
+  background-color: rgb(238, 173, 9);
+  outline: none;
+}
+
 
 /* Categories */
 .categories h2 {
@@ -179,7 +182,8 @@
   color: rgb(238, 173, 9);
   font-size: medium;
   font-weight: bold;
-  text-shadow:1px 1px black;
+  -webkit-text-stroke:0.5px black;
+  /* text-shadow:1px 1px black; */
   /* background-color: rgb(48, 36, 36); */
   border-radius: 5px;
   padding: 1%;
@@ -192,7 +196,8 @@
   color: rgb(238, 173, 9);
   font-size: medium;
   font-weight: bold;
-  text-shadow:1px 1px black;
+  -webkit-text-stroke:0.5px black;
+  /* text-shadow:1px 1px black; */
   border-radius: 5px;
   padding: 1%;
 }
@@ -201,10 +206,11 @@
   position: absolute;
   bottom: 10px;
   right: 213px;
-  color: rgb(238, 173, 9);
+  color: rgb(238, 173, 9);  
   font-size: medium;
   font-weight: bold;
-  text-shadow:1px 2px black;
+  -webkit-text-stroke:0.5px black;
+  /* text-shadow:1px 2px black; */
   border-radius: 5px;
   padding: 1%;
 }
@@ -277,4 +283,221 @@
 
 .footer p a:hover{
   color:burlywood
+}
+
+
+
+
+/* CSS for Mobile */
+@media only screen and  (max-width:768px){
+  .master{
+    background-image: url(../images/background.jpg);
+    background-position:top;
+    background-repeat:repeat-y;
+    background-size: contain;
+}
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0%;
+  }
+  .logo {
+    width: 20%;  
+  }
+
+  .online {
+    border: none;
+    padding: 1%;
+    font-weight: bolder;
+    background-color: rgba(218, 9, 9, 0.986);
+    font-size: 5px;
+    font-style: italic;
+    color: rgb(1, 23, 56);
+    border-radius: 5px;
+  }
+
+  .menu ul {
+    list-style-type: none;
+    padding: 1% 0 1% 0;
+  }
+  
+  .menu ul li {
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+    font-size: 5px;
+  }
+
+  .food-search input[type="search"] {
+    width: 50%;
+    padding: 1%;
+    font-size: 5px;
+    background-color: inherit;
+    color:antiquewhite;  
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    border-radius: 3px;
+    outline: none;
+  }
+
+  .food-search input[type="search"]::placeholder{
+    color:rgb(201, 201, 201);
+  }
+
+  .btn {
+    padding: 1%;
+    border: none;
+    font-size: 5px;
+    color: rgb(1, 23, 56);
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: rgba(7, 167, 167, 0.986);
+    font-style: italic;
+    color: rgb(1, 23, 56);
+    outline:none;
+  }
+   .categories h2 {
+    padding: 2%;
+    font-size: 10px;
+    font-style: oblique;
+    font-weight: 800;
+    color: rgb(1, 23, 56);
+  }
+  
+  .box {
+    margin: 1.5%;
+    width: 30%;
+    min-height: 35px;
+    max-height: 35px;
+    float: left;
+    }
+  
+  .image-size-snacks {
+    min-height: 35px;
+    max-height: 35px;
+    max-width: 100%;
+  }
+  
+  .float-container {
+    position: relative;
+  }
+  
+  .float-text-drinks {
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 7px;
+    right: 11px;
+    color: rgb(238, 173, 9);
+    -webkit-text-stroke:0.09px black;
+    font-size:2px;
+    font-weight: bold;
+    border-radius: 5px;
+
+  }
+  
+  .float-text-snacks {
+    position: absolute;
+    bottom: 7px;
+    right: 20px;
+    color: rgb(238, 173, 9);
+    stroke:1px solid black;
+    font-size: 2px;
+    font-weight: bold;
+    -webkit-text-stroke:0.09px black;
+    /* text-shadow:1px 1px black; */
+    border-radius: 5px;
+    padding: 1%;
+  }
+  
+  .float-text-meals {
+    position: absolute;
+    bottom: 7px;
+    right: 22px;
+    color: rgb(238, 173, 9);
+    font-size: 2px;
+    font-weight: bold;
+    -webkit-text-stroke:0.09px black;
+    /* text-shadow:1px 2px black; */
+    border-radius: 5px;
+    padding: 1%;
+  }
+
+  /* Food Menu */
+.food-menu{
+  background-color:rgba(196, 132, 37, 0.575);
+}
+.food-menu h2 {
+  padding: 2%;
+  font-size: 10px;
+  font-style: oblique;
+  font-weight: 800;
+  color: rgb(1, 23, 56);
+}
+
+.food{
+  float:left;
+  position: relative;
+  width: 55%;
+  margin: 1%;
+  left: 50%;
+}
+
+.foodmenu-text1{
+  font-style: oblique;
+  position: absolute;
+  font-size: 5px;
+  right: 100%;
+  width:100%;
+  font-weight: 550;
+}
+
+.foodmenu-text2{
+  font-style: italic;
+  font-weight: lighter;
+  position: absolute;
+  font-size: 4px;
+  right: 100%;
+  width:100%;
+  top:10px;
+}
+
+/* Social */
+.social{
+  background-color:burlywood;
+}
+.social ul li {
+  position: relative;
+  display: inline;
+  margin: 1%;
+  padding: 1%;
+  left: 35%;
+}
+
+.social ul li a img{
+  position: relative;
+  width: 12%;
+}
+
+/* Footer */
+.footer{
+/* background-color: rgba(146, 26, 26, 0.788); */
+background-color: rgba(146, 26, 26, 0.788);
+}
+
+.footer p a{
+color: goldenrod;
+text-decoration: none;
+}
+
+.footer p a:hover{
+color:burlywood
+}
+.size{
+  font-size: 7px;
+}
+
 }
